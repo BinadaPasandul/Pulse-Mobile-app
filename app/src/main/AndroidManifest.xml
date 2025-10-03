@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pulse_Binada">
         <activity
+            android:name=".Onboarding2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding1Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
