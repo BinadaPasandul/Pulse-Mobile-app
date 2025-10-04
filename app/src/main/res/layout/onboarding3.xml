@@ -5,19 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Onboarding1Activity">
+    tools:context=".Onboarding3Activity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
-            app:srcCompat="@drawable/ob1"
+            app:srcCompat="@drawable/ob3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="16dp"
-            android:text="@string/ob1_title"
+            android:text="@string/ob3_title"
             android:textColor="#FFFFFF"
             android:textSize="36sp"
             android:textStyle="bold"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
             android:layout_marginEnd="48dp"
-            android:text="@string/ob1_description"
+            android:text="@string/ob3_description"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textAlignment="center"

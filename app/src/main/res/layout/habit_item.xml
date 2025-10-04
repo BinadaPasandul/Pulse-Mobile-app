@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/habit_item_shadow"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginHorizontal="8dp"
+    android:elevation="4dp">
+
+    <CheckBox
+        android:id="@+id/habit_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/checkbox_style"
+        android:checked="false"
+        android:scaleX="1.2"
+        android:scaleY="1.2" />
+
+    <TextView
+        android:id="@+id/habit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sample habit text"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/habit_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Delete"
+        app:tint="@android:color/white"
+        android:alpha="0.6"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp" />
+
+</LinearLayout>

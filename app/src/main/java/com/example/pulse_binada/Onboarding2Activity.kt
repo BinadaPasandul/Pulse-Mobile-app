@@ -1,6 +1,8 @@
 package com.example.pulse_binada
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,23 @@ class Onboarding2Activity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        // Get button references
+        val nextButton = findViewById<Button>(R.id.nextButton)
+        val skipButton = findViewById<Button>(R.id.skipButton)
+
+        // Navigate to Onboarding2Activity when clicking "Next"
+        nextButton.setOnClickListener {
+            val intent = Intent(this, Onboarding3Activity::class.java)
+            startActivity(intent)
+        }
+
+        skipButton.setOnClickListener {
+
+            val intent = Intent(this, HabitpageActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
-}
+
+
+    }

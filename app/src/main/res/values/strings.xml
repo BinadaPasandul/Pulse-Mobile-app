@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Pulse_Binada</string>
+
+    <!--Onboarding screen 1  !-->
+    <string name="ob1_title">Track Your Habits</string>
+    <string name="ob1_description">Stay consistent and watch your personal growth</string>
+    <string name="skip_button">Skip</string>
+    <string name="next_button">Next</string>
+
+    <!--Onboarding screen 2  !-->
+    <string name="ob2_title">Log Your Mood</string>
+    <string name="ob2_description">Keep Track of your mood everyday with simple emojis</string>
+
+    <!--Onboarding screen 3  !-->
+    <string name="ob3_title">Stay Hydrated</string>
+    <string name="ob3_description">Set custom reminders to drink water throughout the day</string>
+
 </resources>
