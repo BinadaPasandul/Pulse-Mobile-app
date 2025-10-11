@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_shadow"
+    android:elevation="2dp">
+
+    <!-- Emoji -->
+    <TextView
+        android:id="@+id/mood_entry_emoji"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="😊"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Mood Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mood_entry_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Happy"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/mood_entry_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dec 15"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:alpha="0.7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" • "
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:alpha="0.5" />
+
+            <TextView
+                android:id="@+id/mood_entry_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:30"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:alpha="0.7" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Delete Button -->
+    <ImageView
+        android:id="@+id/mood_entry_delete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Delete mood entry"
+        android:alpha="0.6"
+        android:layout_marginStart="8dp"
+        app:tint="@android:color/white" />
+
+</LinearLayout>
