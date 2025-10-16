@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.pulse_binada"
-    compileSdk = 36
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.pulse_binada"
         minSdk = 25
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -25,6 +25,10 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            isDebuggable = true
+            isMinifyEnabled = false
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -32,6 +36,17 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    
+    buildFeatures {
+        buildConfig = true
+        viewBinding = true
+    }
+    
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 
@@ -44,10 +59,9 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     
     // WorkManager for background tasks
-    implementation("androidx.work:work-runtime-ktx:2.9.0")
+    implementation("androidx.work:work-runtime-ktx:2.8.1")
     
-    // Notification support
-    implementation("androidx.core:core-ktx:1.12.0")
+    // Notification support - removed duplicate dependency
     
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
